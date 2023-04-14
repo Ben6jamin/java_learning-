@@ -1,14 +1,28 @@
 import java.util.Scanner;
 
-public class Computechange {
-    double money;
+public class ComputeChange {
 
-    Scanner dr = new Scanner(System.in);
+    public static void main(String[] args) {
 
-    System.out.println("enter amount of money");
+        double money;
 
-    money=dr.nextDouble();
+        Scanner dr = new Scanner(System.in);
 
-    double Newamount =
+        System.out.println("enter amount of money");
 
+        money = dr.nextDouble();
+
+        double cents = money * 100;
+
+        double dollars = cents % 100;
+
+        double quarters = dollars % 25;
+
+        double dimes = quarters % 10;
+
+        double pennies = dimes % 5;
+
+        System.out.println("here is " + pennies);
+
+    }
 }
