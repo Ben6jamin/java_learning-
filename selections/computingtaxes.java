@@ -25,7 +25,7 @@ public class computingtaxes {
 
         if(status == 0){
           System.out.println("taxes u have is equal to :");
-          if  (taxableincome < 83350)
+          if  (taxableincome < 83350){
               taxes = ((taxableincome * 10)/(100));
               System.out.println(taxes);
           else if (taxableincome < 33950)
@@ -43,7 +43,7 @@ public class computingtaxes {
           else
                taxes =((taxableincome * 35)/(100));
                System.out.println(taxes);
-
+          }
     }
 }
 }
